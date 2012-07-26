@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<box xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <setting pref="extensions.prettier_bookmarks.australisTheme" type="bool" title="Apply Australis styling to the bookmarks toolbar">
+    Bookmarks must have visible names for this to work
+  </setting>
+
+  <setting pref="extensions.prettier_bookmarks.specialIcons" type="bool" title="Use inbuilt icons for bookmarks that don't have one" />
+
+  <setting pref="extensions.prettier_bookmarks.cropLongLabels" type="bool" title="Crop long bookmark names (if more than 7em)" />
+
+  <setting pref="extensions.prettier_bookmarks.preventOverflow" type="bool" title="Use fixed width to fit properly with other toolbar items">
+    Will prevent overflow when bookmarks are in nav-bar
+  </setting>
+
+  <setting pref="extensions.prettier_bookmarks.hideDropmarkers" type="bool" title="Hide dropmarkers (if any) from bookmark folders" />
+
+</box>

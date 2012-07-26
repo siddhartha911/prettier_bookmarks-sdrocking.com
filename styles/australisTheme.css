@@ -1,0 +1,77 @@
+#personal-bookmarks:first-child {
+  -moz-padding-start: 2px !important;
+}
+
+#personal-bookmarks:last-child {
+  -moz-padding-end: 2px !important;
+}
+
+toolbarbutton.bookmark-item {
+  -moz-appearance: none !important;
+
+  color: inherit !important;
+
+  -moz-transition-property: background-color, border-color, box-shadow !important;
+  -moz-transition-duration: 150ms !important;
+}
+
+toolbarbutton.bookmark-item {
+  padding: 1px 2px !important;
+  border: none !important;
+  background: none !important;
+}
+
+#navigator-toolbox[iconsize=large]:not([customizing]) toolbarbutton.bookmark-item:first-child {
+  -moz-padding-start: 6px !important;
+}
+
+#navigator-toolbox[iconsize=small]:not([customizing]) toolbarbutton.bookmark-item:first-child {
+  -moz-padding-start: 4px !important;
+}
+
+toolbarbutton.bookmark-item > .toolbarbutton-text {
+  background: hsla(210,32%,93%,0) padding-box !important;
+  border-radius: 2px !important;
+  border: 1px solid !important;
+  border-color: hsla(210,54%,20%,0) hsla(210,54%,20%,0) hsla(210,54%,20%,0) !important;
+  box-shadow: 0 1px hsla(0,0%,100%,0) inset,
+              0 1px hsla(210,54%,20%,0),
+              0 0 2px hsla(210,54%,20%,0) !important;
+
+  padding-top: 2.5px !important;
+  padding-bottom: 2px !important;
+
+  -moz-padding-end: 2px !important;
+  -moz-padding-start: 21px !important;
+  -moz-margin-start: -24px !important;
+}
+
+#navigator-toolbox[iconsize=large] #nav-bar toolbarbutton.bookmark-item > .toolbarbutton-text {
+  padding-top: 3.5px !important;
+  padding-bottom: 3px !important;
+}
+
+toolbarbutton.bookmark-item:not([open]):not(:active):hover > .toolbarbutton-text {
+  background-image: -moz-linear-gradient(hsla(0,0%,100%,.6), hsla(0,0%,100%,.1)) !important;
+  border-color: hsla(210,54%,20%,.15) hsla(210,54%,20%,.2) hsla(210,54%,20%,.25) !important;
+  box-shadow: 0 1px hsla(0,0%,100%,.3) inset,
+              0 1px hsla(210,54%,20%,.03),
+              0 0 2px hsla(210,54%,20%,.1) !important;
+}
+
+toolbarbutton.bookmark-item:hover:active:not([disabled]) > .toolbarbutton-text,
+toolbarbutton.bookmark-item[open] > .toolbarbutton-text {
+  background-image: -moz-linear-gradient(hsla(0,0%,100%,.6),hsla(0,0%,100%,.1)) !important;
+  background-color: hsla(210,54%,20%,.15) !important;
+  border-color: hsla(210,54%,20%,.3) hsla(210,54%,20%,.35) hsla(210,54%,20%,.4) !important;
+  box-shadow: 0 1px 1px hsla(210,54%,20%,.1) inset,
+              0 0 1px hsla(210,54%,20%,.2) inset,
+              0 1px 0 hsla(210,54%,20%,0),
+              0 0 2px hsla(210,54%,20%,0) !important;
+
+  -moz-transition: none;
+}
+
+#navigator-toolbox[mode=icons][iconsize=large] > #nav-bar > #personal-bookmarks toolbarbutton.bookmark-item menupopup {
+  margin-top: -3px !important;
+}

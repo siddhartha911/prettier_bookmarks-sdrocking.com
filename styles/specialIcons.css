@@ -1,0 +1,14 @@
+.bookmark-item:not([src])[scheme="file"],
+.bookmark-item:not([src])[scheme="http"],
+.bookmark-item:not([src])[scheme="https"] {
+  list-style-image: url("chrome://browser/skin/places/bookmark.png") !important;
+  -moz-image-region: rect(0px, 32px, 16px, 16px)!important;
+}
+.bookmark-item:not([src])[scheme="about"], 
+.bookmark-item:not([src])[scheme="chrome"] {
+  list-style-image: url("chrome://browser/skin/places/bookmark.png") !important;
+  -moz-image-region: rect(0px, 16px, 16px, 0px)!important;
+}
+.bookmark-item[scheme="javascript"] {
+  list-style-image: url("moz-icon://.js?size=16") !important;
+}

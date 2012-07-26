@@ -1,0 +1,3 @@
+#navigator-toolbox:not([customizing]) #PlacesToolbar toolbarbutton.bookmark-item:not([container]) {
+  max-width: 7em !important;
+}
